@@ -2,7 +2,7 @@ const express=require('express')
 const cors=require('cors')
 const mongoose=require('mongoose')
 const DictionaryRouter=require('./Routes/Dictionary')
-const PORT =5000||process.env.port
+const PORT=process.env.PORT||5000;
 const app=express()
 app.use(cors())
 app.use(DictionaryRouter)
